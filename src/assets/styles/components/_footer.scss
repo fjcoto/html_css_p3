@@ -1,0 +1,56 @@
+.footer {
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem;
+    color: white;
+    background-color: $color-principal;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0;
+        margin: 0 auto 2rem;
+
+
+        @media screen and (min-width: $widthMinTablet) {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    &__item {
+        text-align: center;
+        list-style: none;
+    }
+
+    &__link {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__socials {
+        margin: 1rem 0 1rem 0;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    &__social-link {
+        padding-right: 0.5rem;
+        color: white;
+    }
+
+    &__copyright,
+    &__disclaimer {
+        margin: 0;
+        font-size: 0.75rem;
+        font-style: italic;
+        text-align: center;
+
+    }
+}
