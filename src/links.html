@@ -1,30 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fran Coto Boilerplate</title>
+    <title>Enlaces</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 
-<body class="home">
+<body class="links">
     <include src="src/components/header.html"></include>
-    <div class="home__overlay"></div>
-    <section class="home__container">
-        <h2 class="home__title">Bienvenido a Queen UOC</h2>
-        
-        <img data-aos="fade-up"
-        data-aos-duration="3000" class="home__logo" src="assets/images/queen_home.jpg" alt="Imagen de Queen en el home">
+    <div class="overlay"></div>
+    <section class="links__container">
+        <h2 class="links__title">Enlaces</h2>
 
-        <p class="home__text">
-            En esta página encontrarás información relativa al grupo de música Queen. Accede a las diferentes opciones del menú disponibles para navegar por los contenidos de la página.
+        <p class="links__text">En esta página indican los recursos externos usados para la creación de la página.
         </p>
 
-        <p class="home__text home__text--note">
-            Página realizada como práctica del Máster de Desarrollo de sitios y aplicaciones web de la UOC.
-        </p>
+        <table class="table-fluid">
+
+            <head>
+                <tr><th>Página</th>
+                    <th>Elemento</th>
+                    <th>Enlace</th>
+                </tr>
+            </head>
+            <tbody>
+                <tr>
+                    <td>Todas</td>
+                    <td>Logo de la cabecera</td>
+                    <td>
+                        <a
+                            href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Queen_logo.svg/1200px-Queen_logo.svg.png">
+                            <i class="fa-solid fa-arrow-up-right-from-square black"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Home</td>
+                    <td>Imagen página principal</td>
+                    <td>
+                        <a
+                            href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cc0bec74-75f2-4bc1-910c-0cb93e7e18a5/dg07lrj-4ecb87b9-4b3b-45ab-836f-abb0146dd5fb.jpg/v1/fill/w_1920,h_1920,q_75,strp/queen_black_and_white_pop_art_by_kahlildesign_dg07lrj-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NjMGJlYzc0LTc1ZjItNGJjMS05MTBjLTBjYjkzZTdlMThhNVwvZGcwN2xyai00ZWNiODdiOS00YjNiLTQ1YWItODM2Zi1hYmIwMTQ2ZGQ1ZmIuanBnIiwiaGVpZ2h0IjoiPD0xOTIwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvY2MwYmVjNzQtNzVmMi00YmMxLTkxMGMtMGNiOTNlN2UxOGE1XC9rYWhsaWxkZXNpZ24tNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.EBzLGmsoYuqbeO4-RQ7mG-9VKSroSejpaRPTt0yqMdQ">
+                            <i class="fa-solid fa-arrow-up-right-from-square black"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Categoría</td>
+                    <td>Slide 1 Carousel</td>
+                    <td>
+                        <a
+                            href="https://cdn2.picryl.com/photo/1977/12/31/queen-news-of-the-world-1977-press-kit-photo-02-dc7fa1-1024.jpg">
+                            <i class="fa-solid fa-arrow-up-right-from-square black"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Categoría</td>
+                    <td>Slide 2 Carousel</td>
+                    <td>
+                        <a
+                            href="https://cdn2.picryl.com/photo/1981/12/31/los-miembros-de-queen-junto-a-diego-maradona-en-argentina-1981-01-b937b2-1024.jpg">
+                            <i class="fa-solid fa-arrow-up-right-from-square black"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Categoría</td>
+                    <td>Slide 3 Carousel</td>
+                    <td>
+                        <a
+                            href="https://img.goodfon.com/original/1920x1200/4/5f/queen-freddi-merkyuri-dzhon.jpg">
+                            <i class="fa-solid fa-arrow-up-right-from-square black"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
     </section>
     <include src="src/components/footer.html"></include>
     <script type="module" src="assets/scripts/app.js"></script>

@@ -26,3 +26,55 @@ h2::after {
 p {
     padding: 1.5rem;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.table-fluid {
+    border-collapse: collapse;
+    border: 0.1rem solid;
+    text-align: center;
+    width: 80%;
+}
+
+.table-fluid tr,
+.table-fluid td,
+.table-fluid th {
+    border: 0.1rem solid;
+    padding: 1rem;
+}
+
+.table-fluid th {
+    background-color: #47f4d4;
+}
+
+/* Customer styles swiper */
+.swiper {
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.swiper img {
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 601px) {
+        width: 75%;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 50%;
+    }
+}
+
+.swiper-wrapper {
+    text-align: center;
+}
