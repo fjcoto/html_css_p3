@@ -5,13 +5,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem;
-    color: white;
+    padding: 1rem;
+    color: black;
     background-color: $color-principal;
 
     &__menu-button,
     &__user-button {
-        color: white;
+        color: black;
         cursor: pointer;
         background: none;
         border: none;
@@ -43,7 +43,7 @@
         width: 75%;
         height: 100vh;
         padding-top: 1rem;
-        background-color: $color-principal;
+        background-color:  $color-principal;
         transition: transform 0.2s ease-in-out;
         transform: translateX(-100%);
 
@@ -79,11 +79,14 @@
     }
 
     &__link {
-        color: white;
+        color: black;
         text-decoration: none;
 
         &:hover {
             text-decoration: underline;
+            text-underline-offset: 0.5rem;
+            text-decoration-thickness: 0.2rem;
+            font-weight: bold;
         }
     }
 

@@ -1,7 +1,12 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 document.addEventListener('DOMContentLoaded', function () {
 
     // Index selectors
     const overlay = document.querySelector('.home__overlay');
+    const logoHome = document.querySelector('.home__logo');
 
     // Header selectors
     const menuButton = document.querySelector('.header__menu-button');
@@ -25,5 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     menuButton.addEventListener('click', toggleMenu);
+
+    // Change home logo opacity
+    logoHome.style.opacity = 1;
+
+    AOS.init();
 
 });

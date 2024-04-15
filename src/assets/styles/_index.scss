@@ -1,20 +1,5 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html,
-body {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-}
-
 .home {
+    background-color: $color-background-2;
 
     &__overlay {
         position: fixed;
@@ -28,17 +13,34 @@ body {
     }
 
     &__container {
+        margin-top: 0.5rem;
         display: flex;
-        flex: 1;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 56vh;
-        background-color: $color-secondary;
+        color: white;
+
+        @media screen and (min-width: $widthMinTablet) {}
     }
 
     &__title {
-        padding: 0;
-        margin: 0;
+        margin-top: 20px;
+    }
+
+    &__logo {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__text {
+
+        &--note {
+            font-style: italic;
+            font-size: 0.8rem;
+        }
     }
 
 }
