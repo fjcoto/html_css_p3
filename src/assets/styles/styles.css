@@ -42,14 +42,16 @@ p {
     border-collapse: collapse;
     border: 0.1rem solid;
     text-align: center;
-    width: 80%;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
 }
 
 .table-fluid tr,
 .table-fluid td,
 .table-fluid th {
     border: 0.1rem solid;
-    padding: 1rem;
+    padding: 0.2rem;
 }
 
 .table-fluid th {
@@ -66,15 +68,41 @@ p {
     width: 100%;
     height: auto;
 
-    @media screen and (min-width: 601px) {
+}
+
+@media screen and (min-width: 601px) {
+
+    .table-fluid {
+        max-width: 700px;
+    }
+
+    .swiper img {
         width: 75%;
     }
 
-    @media screen and (min-width: 1024px) {
+    .table-fluid tr,
+    .table-fluid td,
+    .table-fluid th {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .table-fluid {
+        max-width: 1000px;
+    }
+
+    .swiper img {
         width: 50%;
     }
 }
 
+
 .swiper-wrapper {
     text-align: center;
+}
+
+ol {
+    list-style-position: inside;
+    padding: 0.1rem;
 }

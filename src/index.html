@@ -9,23 +9,29 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 
-<body class="home">
+<body>
     <include src="src/components/header.html"></include>
-    <div class="overlay"></div>
-    <section class="home__container">
-        <h2 class="home__title">Bienvenido a Queen UOC</h2>
-        
-        <img data-aos="fade-up"
-        data-aos-duration="3000" class="home__logo" src="assets/images/queen_home.jpg" alt="Imagen de Queen en el home">
 
-        <p class="home__text">
-            En esta página encontrarás información relativa al grupo de música Queen. Accede a las diferentes opciones del menú disponibles para navegar por los contenidos de la página.
-        </p>
+    <main class="home">
+        <div class="overlay"></div>
 
-        <p class="home__text home__text--note">
-            Página realizada como práctica del Máster de Desarrollo de sitios y aplicaciones web de la UOC.
-        </p>
-    </section>
+        <section class="home__container">
+            <h2 class="home__title">Bienvenido a Queen UOC</h2>
+
+            <img data-aos="fade-up" data-aos-duration="3000" class="home__logo" src="assets/images/queen_home.jpg"
+                alt="Imagen de Queen en el home">
+
+            <p class="home__text">
+                En esta página encontrarás información relativa al grupo de música Queen. Accede a las diferentes
+                opciones del menú disponibles para navegar por los contenidos de la página.
+            </p>
+
+            <p class="home__text home__text--note">
+                Página realizada como práctica del Máster de Desarrollo de sitios y aplicaciones web de la UOC.
+            </p>
+        </section>
+    </main>
+
     <include src="src/components/footer.html"></include>
     <script type="module" src="assets/scripts/app.js"></script>
 </body>
