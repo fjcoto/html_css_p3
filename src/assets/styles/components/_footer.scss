@@ -1,6 +1,5 @@
 .footer {
-    bottom: 0;
-    left: 0;
+    flex-shrink: 0;
     padding: 1.5rem;
     color: black;
     background-color:  $color-principal;
