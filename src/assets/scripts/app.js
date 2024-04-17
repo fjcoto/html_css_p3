@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Init Swiper
   const swiper = new Swiper('.swiper', {
-    
+
     modules: [Navigation, Pagination, Autoplay],
     loop: true,
     autoplay: {
@@ -54,6 +54,16 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    }
+  });
+
+  // Active menu option
+  const path = window.location.pathname;
+  const options = document.querySelectorAll('.header__nav-item > a');
+
+  options.forEach(function (option) {
+    if (option.getAttribute('href') === path) {
+      option.classList.add('active');
     }
   });
 

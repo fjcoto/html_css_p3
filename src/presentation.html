@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <include src="src/components/header.html"></include>
+    <main class="presentation">
+        <div class="overlay"></div>
+
+        <section class="presentation__container">
+            <h2 class="presentation__title">Presentación</h2>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/slide_1.jpg" alt="Grupo de Rock Queen en 1977">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/images/slide_2.jpg"
+                            alt="Queen junto al futbolísta Maradona">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/images/slide_3.jpg" alt="Portal del álbum Hot Space">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev" aria-label="Anterior"></div>
+                <div class="swiper-button-next" aria-label="Siguiente"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <include src="src/components/footer.html"></include>
+    <script type="module" src="assets/scripts/app.js"></script>
+</body>
+
+</html>
