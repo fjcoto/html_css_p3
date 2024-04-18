@@ -22,8 +22,8 @@
 
         @media screen and (min-width: $widthMinTablet) {
             position: static;
-            padding-top: 0;
             height: auto;
+            padding-top: 0;
             transform: none;
         }
 
@@ -84,10 +84,10 @@
         text-decoration: none;
 
         &:hover {
-            text-decoration: underline;
-            text-underline-offset: 0.5rem;
-            text-decoration-thickness: 0.2rem;
             font-weight: bold;
+            text-decoration: underline;
+            text-decoration-thickness: 0.2rem;
+            text-underline-offset: 0.5rem;
         }
     }
 

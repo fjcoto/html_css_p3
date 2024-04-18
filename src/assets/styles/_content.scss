@@ -1,20 +1,20 @@
 .content {
-    background-color: $color-background-1;
     flex: 1;
+    background-color: $color-background-1;    
 
     &__container {
-        margin-top: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 0.5rem;        
         color: black;
 
     }
 
     &__img-container {
-        margin-left: 1rem;
         margin-right: 1rem;
+        margin-left: 1rem;        
     }
 
     &__title {
@@ -37,8 +37,8 @@
     }
 
     &__list {
-        margin-bottom: 0.2rem;
         padding-left: 3rem;
+        margin-bottom: 0.2rem;
 
         @media screen and (min-width: $widthMinTablet) {
             margin: 0 5rem;
@@ -49,10 +49,10 @@
         }    
 
         &-item {
+            padding-right: 2rem;
+            padding-left: 3rem;
             margin-bottom: 0.2rem;
             text-indent: -3rem;
-            padding-left: 3rem;
-            padding-right: 2rem;
 
             &--indented {
                 padding-left: 3rem;
@@ -61,12 +61,12 @@
     }
 
     &__grid {
-        margin-top: 1rem;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
-        cursor: pointer;
+        margin-top: 1rem;
         margin-bottom: 1rem;
+        cursor: pointer;        
 
         @media screen and (min-width: $widthMinTablet) {
             grid-template-columns: repeat(2, 1fr);
@@ -79,29 +79,29 @@
         &-item {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            background-color: $color-background-4;
-            border-radius: 20px;
-            padding: 0.5rem;
+            justify-content: center;
             width: 250px;
             height: 250px;
-            transition: transform 0.5s ease-in-out;
-            transform: scale(1);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 0.5rem;
             color: inherit;
             text-decoration: none;
+            background-color: $color-background-4;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease-in-out;
+            transform: scale(1);
 
             &:hover {
-                transform: scale(1.15);
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                transform: scale(1.15);                
             }
 
             &-title {
+                padding: 0.74rem;
+                padding-bottom: 1rem;
                 font-size: 1rem;
                 text-align: center;
-                padding-bottom: 1rem;
-                padding: 0.74rem;
             }
 
             &-image {
@@ -110,8 +110,8 @@
             }
 
             &-text {
-                text-align: center;
                 font-size: 0.75rem;
+                text-align: center;                
             }
         }
 

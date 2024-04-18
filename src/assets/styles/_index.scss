@@ -1,16 +1,14 @@
 .home {
-    background-color: $color-background-2;
     flex: 1;
+    background-color: $color-background-2;    
 
     &__container {
-        margin-top: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 0.5rem;
         color: white;
-
-        @media screen and (min-width: $widthMinTablet) {}
     }
 
     &__title {
@@ -18,18 +16,18 @@
     }
 
     &__logo {
+        display: block;
         width: 80%;
         height: auto;
-        display: block;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;        
     }
 
     &__text {
 
         &--note {
-            font-style: italic;
             font-size: 0.8rem;
+            font-style: italic;            
         }
     }
 

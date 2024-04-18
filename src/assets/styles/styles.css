@@ -253,6 +253,10 @@ textarea {
 }
 
 button {
+    padding: 0.5rem;
+}
+
+.form-button {
     border: none;
     border-radius: 0.5rem;
     background-color: #f9cece;
