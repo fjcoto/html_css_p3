@@ -202,21 +202,17 @@ ul.breadcrumb li+li {
 ul.breadcrumb li+li::before {
     padding-right: .25rem;
     content: ">";
-    color: var(--principal-color);
 }
 
 ul.breadcrumb li a {
-    color: var(--principal-color);
     text-decoration: none;
 }
 
 ul.breadcrumb li a:hover {
-    color: var(--principal-color-a);
     text-decoration: none;
 }
 
 ul.breadcrumb li.active {
-    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -265,4 +261,8 @@ button {
     color: black;
     width: 100px;
     font-size: 1rem;
+}
+
+iframe {
+    border: none;
 }
