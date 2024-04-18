@@ -9,41 +9,13 @@
     color: black;
     background-color: $color-principal;
 
-    &__menu-button,
-    &__user-button {
-        color: black;
-        cursor: pointer;
-        background: none;
-        border: none;
-
-    }
-
-    &__menu-button,
-    &__menu-times {
-        @media screen and (min-width: $widthMinTablet) {
-            display: none;
-        }
-    }
-
-    &__logo-container {
-        width: 100px;
-        height: auto;
-
-        .header__logo {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-    }
-
     &__nav {
         position: absolute;
         top: 100%;
         left: 0;
         width: 75%;
         height: 100vh;
-        padding-top: 1rem;
-        background-color:  $color-principal;
+        background-color: $color-principal;
         transition: transform 0.2s ease-in-out;
         transform: translateX(-100%);
 
@@ -75,6 +47,33 @@
                 padding: 0 1rem 0 2rem;
                 margin-bottom: 0;
             }
+        }
+    }
+
+    &__menu-button,
+    &__user-button {
+        color: black;
+        cursor: pointer;
+        background: none;
+        border: none;
+
+    }
+
+    &__menu-button,
+    &__menu-times {
+        @media screen and (min-width: $widthMinTablet) {
+            display: none;
+        }
+    }
+
+    &__logo-container {
+        width: 100px;
+        height: auto;
+
+        .header__logo {
+            display: block;
+            width: 100%;
+            height: auto;
         }
     }
 

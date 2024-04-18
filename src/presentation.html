@@ -11,11 +11,11 @@
 
 <body>
     <include src="src/components/header.html"></include>
-    <main class="presentation">
+    <main class="content">
         <div class="overlay"></div>
 
-        <section class="presentation__container">
-            <h2 class="presentation__title">Presentación</h2>
+        <section class="content__container">
+            <h2 class="content__title">Presentación</h2>
 
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -35,34 +35,51 @@
                 <div class="swiper-scrollbar"></div>
             </div>
 
-            <p class="presentation__text">
-                En esta página, encontrarás información relativa al grupo de rock Queen. Concretamente, se desea mostrar
-                un sitio web <i>responsive</i> con ciertas información del grupo, para poder conocerles mejor.
+            <p class="content__text">
+                En esta página, encontrarás información relativa al grupo de rock Queen. Concretamente, se muestra
+                un sitio web <i>responsive</i> con información variada sobre el grupo, para poder conocerles mejor.
             </p>
 
-            <p class="presentation__text">
+            <figure>
+                <div class="video-fluid">
+                    <iframe class="video-fluid-item" width="560" height="315"
+                        src="https://youtu.be/ujVLJ2xqePA?si=Lnmzgb8boR7lGeQp" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+                <figcaption lang="en">Recopilación de los mejores videos musicales de Queen</figcaption>
+            </figure>
+
+            <p class="content__text">
                 La página se estructura de la siguiente forma:
-            <ul class="presentation__list">
-                <li class="presentation__list-item"><a href="index.html">Inicio</a>: Página de bienvenida a la web,
+            <ul class="content__list">
+                <li class="content__list-item"><a href="index.html">Inicio</a>: Página de bienvenida a la web,
                     donde se muestra una
                     imagen icónica del grupo como
                     presentación.</li>
-                <li><a href="category.html">Categoría</a>:: En esta página se puede encontrar información relativa al
+                <li><a href="category.html">Categoría</a>: En esta página se puede encontrar información relativa al
                     grupo:</li>
-                <ul class="presentation__list">
-                    <li class="presentation__list-item presentation__list-item--indented"><a href="detail.html">Lista de
-                            discos</a>:: Lista de
+                <ul class="content__list">
+                    <li class="content__list-item content__list-item--indented"><a href="detail.html">Discografía</a>: Lista de
                         discos de estudio obtenidos de la Wikipedia.</li>
-                    <li class="presentation__list-item presentation__list-item--indented">Miembros de la banda: En
+                    <li class="content__list-item content__list-item--indented">Miembros de la banda: En
                         construcción.</li>
-                    <li class="presentation__list-item presentation__list-item--indented">Conciertos: En construcción.
+                    <li class="content__list-item content__list-item--indented">Conciertos: En construcción.
+                    </li>
+                    <li class="content__list-item content__list-item--indented">Notícias: En construcción.
+                    </li>
+                    <li class="content__list-item content__list-item--indented">Galería de fotos: En construcción.
+                    </li>
+                    <li class="content__list-item content__list-item--indented">Blog: En construcción.
                     </li>
                 </ul>
-                <li class="presentation__list-item">
+                <li class="content__list-item">
                     Presentación: Esta misma página.
                 </li>
-                <li class="presentation__list-item">
-                    <a href="links.html">Enlaces</a>:: Enlaces a las fuentes externas usadas en esta página (imágenes,
+                <li class="content__list-item">
+                    <a href="links.html">Enlaces</a>: Enlaces a las fuentes externas usadas en esta página (imágenes,
                     videos, ...)
                 </li>
             </ul>

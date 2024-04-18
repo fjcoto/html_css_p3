@@ -1,4 +1,4 @@
-.category {
+.content {
     background-color: $color-background-1;
     flex: 1;
 
@@ -23,6 +23,22 @@
 
     &__text {}
 
+    &__list {
+        margin-bottom: 0.2rem;
+        padding-left: 2rem;
+
+        &-item {
+            margin-bottom: 0.2rem;
+            text-indent: -2rem;
+            padding-left: 2rem;
+
+
+            &--indented {
+                padding-left: 2rem;
+            }
+        }
+    }
+
     &__grid {
         margin-top: 1rem;
         display: grid;
@@ -32,6 +48,10 @@
         margin-bottom: 1rem;
 
         @media screen and (min-width: $widthMinTablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width: $widthDesktop) {
             grid-template-columns: repeat(3, 1fr);
         }
 
@@ -75,4 +95,5 @@
         }
 
     }
+
 }

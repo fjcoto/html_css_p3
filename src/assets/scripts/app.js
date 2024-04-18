@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Index selectors
   const overlay = document.querySelector('.overlay');
-  const logoHome = document.querySelector('.home__logo');
 
   // Header selectors
   const menuButton = document.querySelector('.header__menu-button');
