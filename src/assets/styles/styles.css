@@ -182,3 +182,39 @@ table td {
 figcaption {
     margin-bottom: 1rem;
 }
+
+ul.breadcrumb {
+    margin-top: 3rem;
+    list-style: none;
+    font-size: .9rem;
+
+}
+
+ul.breadcrumb li {
+    display: inline-block;
+}
+
+ul.breadcrumb li+li {
+    padding-left: .25rem;
+}
+
+ul.breadcrumb li+li::before {
+    padding-right: .25rem;
+    content: ">";
+    color: var(--principal-color);
+}
+
+ul.breadcrumb li a {
+    color: var(--principal-color);
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: var(--principal-color-a);
+    text-decoration: none;
+}
+
+ul.breadcrumb li.active {
+    color: var(--secondary-color);
+    text-decoration: none;
+}

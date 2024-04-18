@@ -64,6 +64,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (option.getAttribute('href') === path) {
       option.classList.add('active');
     }
+
+    if (path === '/detail.html') {
+      options[1].classList.add('active');
+    }
+
   });
 
 });

@@ -10,7 +10,6 @@
         justify-content: center;
         color: black;
 
-        @media screen and (min-width: $widthMinTablet) {}
     }
 
     &__title {
@@ -21,11 +20,28 @@
         }
     }
 
-    &__text {}
+    &__text {
+
+        @media screen and (min-width: $widthMinTablet) {
+            margin: 0 5rem;
+        } 
+        
+        @media screen and (min-width: $widthDesktop) {
+            margin: 0 10rem;
+        }        
+    }
 
     &__list {
         margin-bottom: 0.2rem;
         padding-left: 2rem;
+
+        @media screen and (min-width: $widthMinTablet) {
+            margin: 0 5rem;
+        } 
+        
+        @media screen and (min-width: $widthDesktop) {
+            margin: 0 10rem;
+        }    
 
         &-item {
             margin-bottom: 0.2rem;
