@@ -181,6 +181,7 @@ table td {
 
 figcaption {
     margin-bottom: 1rem;
+    margin: 0 25px;
 }
 
 ul.breadcrumb {
