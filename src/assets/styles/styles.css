@@ -219,3 +219,46 @@ ul.breadcrumb li.active {
     color: var(--secondary-color);
     text-decoration: none;
 }
+
+form {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+input,
+textarea {
+
+    width: 300px;
+}
+
+@media screen and (min-width: 601px) {
+
+    input,
+    textarea {
+        width: 500px;
+    }
+
+}
+
+button {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #f9cece;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: black;
+    width: 100px;
+    font-size: 1rem;
+}
