@@ -19,8 +19,9 @@ body {
 h2::after {
     content: "";
     height: 0.4rem;
-    background: white;
+    background: #141414;
     display: block;
+    margin-bottom: 1rem;
 }
 
 p {

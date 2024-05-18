@@ -1,6 +1,6 @@
 .home {
     flex: 1;
-    background-color: $color-background-2;    
+    background-color: white;
 
     &__container {
         display: flex;
@@ -8,7 +8,7 @@
         align-items: center;
         justify-content: center;
         margin-top: 0.5rem;
-        color: white;
+        color: $color-background-2;
     }
 
     &__title {
@@ -17,17 +17,21 @@
 
     &__logo {
         display: block;
-        width: 80%;
+        opacity: 0;
+        width: 85%;
         height: auto;
         margin-right: auto;
-        margin-left: auto;        
+        margin-left: auto;
+        transform: translateY(100%);
+        animation: slideUp 1.5s forwards;
+        clip-path: polygon(15% 30%, 20% 15%, 35% 30%, 50% 0%, 65% 30%, 80% 15%, 85% 30%, 100% 15%, 85% 75%, 15% 75%, 0 15%);
     }
 
     &__text {
 
         &--note {
             font-size: 0.8rem;
-            font-style: italic;            
+            font-style: italic;
         }
     }
 
@@ -35,4 +39,16 @@
 
 .hidden {
     display: none;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -18,8 +18,20 @@
         <section class="home__container">
             <h2 class="home__title">Bienvenido a Queen UOC</h2>
 
-            <img data-aos="fade-up" data-aos-duration="3000" class="home__logo" src="assets/images/queen_home.jpg"
-                alt="Imagen de Queen en el home">
+            <!--<img data-aos="fade-up" data-aos-duration="3000" class="home__logo" src="assets/images/queen-home.jpg"
+                alt="Imagen de Queen en el home">-->
+
+            <picture>
+                <source srcset="assets/images/queen-home-480w.webp 480w,
+                                    assets/images/queen-home-600w.webp 600w,
+                                    assets/images/queen-home-800w.webp 800w,
+                                    assets/images/queen-home-1024w.webp 1024w" sizes="(max-width: 600px) 480px,
+                                   (max-width: 800px) 600px,
+                                   (max-width: 1024px) 800px,
+                                   1200px" type="image/webp">
+                <img class="home__logo"
+                    src="assets/images/queen-home-1024w.webp" alt="Imagen de Queen en el home">
+            </picture>
 
             <p class="home__text">
                 En esta página encontrarás información relativa al grupo de música Queen. Accede a las diferentes
