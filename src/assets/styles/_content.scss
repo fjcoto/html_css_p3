@@ -1,20 +1,20 @@
 .content {
     flex: 1;
-    background-color: $color-background-1;    
+    background-color: $color-background-1;
 
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 0.5rem;        
+        margin-top: 0.5rem;
         color: black;
 
     }
 
     &__img-container {
         margin-right: 1rem;
-        margin-left: 1rem;        
+        margin-left: 1rem;
     }
 
     &__title {
@@ -29,11 +29,11 @@
 
         @media screen and (min-width: $widthMinTablet) {
             margin: 0 5rem;
-        } 
-        
+        }
+
         @media screen and (min-width: $widthDesktop) {
             margin: 0 10rem;
-        }        
+        }
     }
 
     &__list {
@@ -42,11 +42,11 @@
 
         @media screen and (min-width: $widthMinTablet) {
             margin: 0 5rem;
-        } 
-        
+        }
+
         @media screen and (min-width: $widthDesktop) {
             margin: 0 10rem;
-        }    
+        }
 
         &-item {
             padding-right: 2rem;
@@ -66,7 +66,7 @@
         gap: 2rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        cursor: pointer;        
+        cursor: pointer;
 
         @media screen and (min-width: $widthMinTablet) {
             grid-template-columns: repeat(2, 1fr);
@@ -94,7 +94,7 @@
 
             &:hover {
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-                transform: scale(1.15);                
+                transform: scale(1.15);
             }
 
             &-title {
@@ -111,10 +111,14 @@
 
             &-text {
                 font-size: 0.75rem;
-                text-align: center;                
+                text-align: center;
             }
         }
 
+    }
+
+    &__video {
+        margin: 1rem 0 1rem 0;
     }
 
 }
