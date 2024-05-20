@@ -69,13 +69,21 @@
     }
 
     &__logo-container {
-        width: 100px;
+        width: 60px;
         height: auto;
+
+        @media screen and (min-width: $widthMinTablet) {
+            width: 150px;
+        }
 
         .header__logo {
             display: block;
             width: 100%;
             height: auto;
+
+            @media screen and (min-width: $widthMinTablet) {
+                content: url('../../assets/images/main-logo.png');
+            }
         }
     }
 

@@ -354,3 +354,7 @@ ul {
         stroke-dashoffset: 0;
     }
 }
+
+hr {
+    margin-bottom: 1.5rem;
+}
