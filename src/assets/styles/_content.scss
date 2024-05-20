@@ -125,6 +125,11 @@
     &__table-img {
         width: 40%;
         height: auto;
+        transition: transform 0.5s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
 
         @media screen and (min-width: $widthMinTablet) {
             width: 90%;

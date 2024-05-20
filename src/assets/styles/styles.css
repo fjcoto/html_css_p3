@@ -16,6 +16,10 @@ body {
     font-family: 'Open Sans', 'Roboto', sans-serif;
 }
 
+h2 {
+    animation: slideDown 1.5s forwards;
+}
+
 h2::after {
     content: "";
     height: 0.4rem;
@@ -302,6 +306,18 @@ h4 {
     }
 }
 
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes fall {
     0% {
         transform: translateY((-200px) rotate(0deg));
@@ -436,5 +452,20 @@ hr {
 
     90% {
         transform: rotate(-3deg);
+    }
+}
+
+@keyframes zoom {
+
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: rotate(1.1);
+    }
+
+    100% {
+        transform: rotate(1.2);
     }
 }
