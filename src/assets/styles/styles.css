@@ -186,9 +186,15 @@ table td {
     height: auto;
 }
 
+.img-fluid-vp {
+    width: 50vw;
+    height: auto;
+}
+
 figcaption {
     margin-bottom: 1rem;
     margin: 0 25px;
+    text-align: center;
 }
 
 ul.breadcrumb {

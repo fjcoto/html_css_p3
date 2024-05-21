@@ -24,20 +24,14 @@
 
             <h2 class="content__title">Álbum - Queen</h2>
 
-            <picture>
-                <source srcset="assets/images/queen-photo-350w.jpg?as=webp 350w,
-                assets/images/queen-photo-480w.jpg?as=webp 480w,
-                                    assets/images/queen-photo-600w.jpg?as=webp 600w,
-                                    assets/images/queen-photo-800w.jpg?as=webp 800w,
-                                    assets/images/queen-photo-1024w.jpg?as=webp 1024w" sizes="(max-width: 480px) 350px,
-                                    (max-width: 600px) 480px,
-                                   (max-width: 800px) 600px,
-                                   (max-width: 1024px) 800px,
-                                   (max-width: 1200px) 1024px,
-                                   1400px" type="image/webp">
-                <img src="assets/images/queen-photo-350w.jpg?as=webp" alt="Imagen antigua del grupo de Queen"
-                    loading="lazy">
-            </picture>
+            <div class="content__img-container">
+                <picture>
+                    <source media="(max-width: 799px)" srcset="assets/images/queen-photo-480w.jpg?as=webp" />
+                    <source media="(min-width: 800px)" srcset="assets/images/queen-photo-800w.jpg?as=webp" />
+                    <img src="assets/images/queen-photo-800w.jpg?as=webp" alt="Imagen antigua del grupo de Queen"
+                        class="img-fluid">
+                </picture>
+            </div>
 
             <p class="content__text">
                 <strong>El primer álbum de Queen, el que lo inició todo</strong> y les llevó donde están a día de hoy.
@@ -72,7 +66,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <figcaption lang="en">Primer álbum de estudio de la banda de rock Queen</figcaption>
+                <figcaption lang="es">Primer álbum de estudio de la banda de rock Queen</figcaption>
             </figure>
 
             <h3>Antecedentes</h3>
@@ -150,7 +144,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <figcaption lang="en">Video oficial de Great King Rat del primer álbum de Queen</figcaption>
+                <figcaption lang="es">Video oficial de Great King Rat del primer álbum de Queen</figcaption>
             </figure>
 
             <h4 style="text-align: left;">«Keep Yourself Alive»</h4>
@@ -192,12 +186,16 @@
             </p>
 
             <div class="content__img-container">
-                <picture>
-                    <source srcset="assets/images/guitar-solo.gif" sizes="(max-width: 480px) 350px,
-                                            (max-width: 600px) 464px,
-                                           464px" type="image/gif">
-                    <img class="img-fluid" src="assets/images/guitar-solo.gif" alt="Unas manos tocando una guitarra">
-                </picture>
+                <figcaption>
+                    <picture>
+                        <source srcset="assets/images/guitar-solo.gif" sizes="(max-width: 480px) 350px,
+                                                (max-width: 600px) 464px,
+                                               464px" type="image/gif">
+                        <img class="img-fluid" src="assets/images/guitar-solo.gif" alt="Unas manos tocando una guitarra"
+                            loading="lazy">
+                    </picture>
+                </figcaption>
+                <figcaption lang="es">Tocando uno solo de guitarra</figcaption>
             </div>
 
             <h4 style="text-align: left;">«My Fairy King»</h4>
@@ -239,6 +237,12 @@
                 lanzamiento de <cite>On Air</cite>.
             </p>
 
+            <div class="content__img-container">
+                <img srcset="assets/images/queen-concert-480w.jpg, assets/images/queen-concert-800w.jpg 1.5x, assets/images/queen-concert-1024w.jpg 2x"
+                    src="assets/images/queen-concert-1024w.jpg" alt="Queen en concierto" class="img-fluid"
+                    loading="lazy" />
+            </div>
+
             <h4 style="text-align: left;">«Son and Daughter»</h4>
 
             <p class="content__text">
@@ -279,7 +283,8 @@
                                    (max-width: 1200px) 800px,
                                    800px" type="image/avif">
                     <img src="assets/images/statue-freddie.jpg?as=avif"
-                        alt="Estatua de Freddie Mercury en la orilla del lago Montreux" class="clip-animation" loading="lazy">
+                        alt="Estatua de Freddie Mercury en la orilla del lago Montreux" class="clip-animation"
+                        loading="lazy">
                 </picture>
             </div>
 
