@@ -1,6 +1,3 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 import Swiper from 'swiper';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
