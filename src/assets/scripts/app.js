@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Header selectors
   const menuButton = document.querySelector('.header__menu-button');
   const navContainer = document.querySelector('.header__nav');
-  const iconBar = document.querySelector('.fa-bars');
-  const iconTimes = document.querySelector('.fa-times');
+  const iconBar = document.querySelector('#fa-bars');
+  const iconTimes = document.querySelector('#fa-times');
 
   function toggleMenu() {
     if (navContainer.style.transform === 'translateX(-100%)' || !navContainer.style.transform) {
