@@ -30,9 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   menuButton.addEventListener('click', toggleMenu);
 
-  // Init AOS
-  AOS.init();
-
   // Init Swiper
   const swiper = new Swiper('.swiper', {
 
