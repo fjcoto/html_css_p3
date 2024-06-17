@@ -1,6 +1,5 @@
 import Swiper from 'swiper';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import 'swiper/swiper-bundle.css';
 
 document.addEventListener('DOMContentLoaded', function () {
 
