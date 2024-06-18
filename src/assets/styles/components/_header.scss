@@ -80,10 +80,6 @@
             display: block;
             width: 100%;
             height: auto;
-
-            @media screen and (min-width: $widthMinTablet) {
-                content: url('../../assets/images/main-logo.png');
-            }
         }
     }
 
