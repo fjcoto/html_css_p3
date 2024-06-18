@@ -11,14 +11,13 @@
         height: auto;
         margin-bottom: 1rem;
 
-        .header__logo {
+        .footer__logo {
             display: block;
-            width: 60px;
+            max-width: 100%;
             height: auto;
 
             @media screen and (min-width: $widthMinTablet) {
                 width: 150px;
-                content: url('../../assets/images/main-logo.png');
             }
         }
     }
