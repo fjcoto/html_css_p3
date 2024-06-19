@@ -28,6 +28,8 @@
     }
 
     &__text {
+        min-height: 1rem;
+        line-height: 1rem;
 
         &--note {
             font-size: 0.8rem;
