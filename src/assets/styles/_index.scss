@@ -1,7 +1,7 @@
 .home {
     flex: 1;
     background-color: white;
-    min-height: 100vh;
+    min-height: max-content;
 
     &__container {
         display: flex;
