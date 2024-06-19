@@ -32,7 +32,7 @@
 
 
         @media screen and (min-width: $widthMinTablet) {
-            grid-template-columns: repeat(6, 1fr);
+            display: flex;
             justify-content: center;
         }
 
