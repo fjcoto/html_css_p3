@@ -40,7 +40,7 @@
     &__list {
         padding-left: 3rem;
         margin-bottom: 0.2rem;
-        min-height: 300px;
+        height: 300px;
 
         @media screen and (min-width: $widthMinTablet) {
             margin: 0 5rem;
