@@ -76,6 +76,10 @@ p {
 
 @media screen and (min-width: 1024px) {
 
+    .swiper {
+        min-height: 500px;
+    }
+
     .swiper img {
         width: 50%;
     }
