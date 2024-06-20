@@ -40,31 +40,7 @@
     &__list {
         padding-left: 3rem;
         margin-bottom: 0.2rem;
-        height: 300px;
-
-        @media screen and (min-width: $widthMinTablet) {
-            margin: 0 5rem;
-        }
-
-        @media screen and (min-width: $widthDesktop) {
-            margin: 0 10rem;
-        }
-
-        &-item {
-            padding-right: 2rem;
-            padding-left: 3rem;
-            margin-bottom: 0.2rem;
-            text-indent: -3rem;
-
-            &--indented {
-                padding-left: 3rem;
-            }
-        }
-    }
-
-    &__sub-list {
-        padding-left: 3rem;
-        margin-bottom: 0.2rem;
+        min-height: 300px;
 
         @media screen and (min-width: $widthMinTablet) {
             margin: 0 5rem;
