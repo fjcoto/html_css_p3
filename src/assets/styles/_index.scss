@@ -1,6 +1,7 @@
 .home {
     flex: 1;
     background-color: white;
+    min-height: calc(100vh + 500px);
 
     &__container {
         display: flex;
