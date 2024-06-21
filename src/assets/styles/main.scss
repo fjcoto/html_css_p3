@@ -2,14 +2,6 @@
 
 @import "variables";
 
-/* Import dependencies */
-
-/* Import component styles */
-
-@import "index";
-@import "components/header";
-@import "components/footer";
-
 /* Import fonts */
 
 @font-face {
@@ -17,3 +9,13 @@
     src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.woff2') format('woff2');
     font-display: swap;
 }
+
+
+/* Import dependencies */
+
+/* Import component styles */
+
+@import "content";
+@import "index";
+@import "components/header";
+@import "components/footer";
