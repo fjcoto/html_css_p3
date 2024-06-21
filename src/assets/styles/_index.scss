@@ -1,12 +1,12 @@
 .home {
     flex: 1;
     background-color: white;
-    min-height: calc(100vh + 500px);
+    min-height: calc(100vh);
 
     @media screen and (min-width: $widthMinTablet) {
         min-height: calc(100vh + 1500px);
     }
-    
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -14,6 +14,14 @@
         justify-content: center;
         margin-top: 0.5rem;
         color: $color-background-2;
+    }
+
+    &__picture {
+        margin-top: 5rem;
+
+        @media screen and (min-width: $widthMinTablet) {
+            margin-top: 0.5rem;
+        }
     }
 
     &__title {
@@ -33,6 +41,11 @@
     }
 
     &__text {
+        margin-top: 5rem;
+
+        @media screen and (min-width: $widthMinTablet) {
+            margin-top: 0rem;
+        }
 
         &--note {
             font-size: 0.8rem;
@@ -45,4 +58,3 @@
 .hidden {
     display: none;
 }
-
