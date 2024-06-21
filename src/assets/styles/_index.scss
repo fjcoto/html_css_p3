@@ -40,6 +40,10 @@
         clip-path: polygon(15% 30%, 20% 15%, 35% 30%, 50% 0%, 65% 30%, 80% 15%, 85% 30%, 100% 15%, 85% 75%, 15% 75%, 0 15%);
     }
 
+    &__text-container {
+        margin-top: 10rem;
+    }
+
     &__text {
         margin-top: 5rem;
 
