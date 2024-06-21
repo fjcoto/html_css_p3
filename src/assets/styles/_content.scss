@@ -27,6 +27,7 @@
     }
 
     &__text {
+        min-height: 1rem;
 
         @media screen and (min-width: $widthMinTablet) {
             margin: 0 5rem;
