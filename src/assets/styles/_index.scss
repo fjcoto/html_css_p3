@@ -16,6 +16,10 @@
         color: $color-background-2;
     }
 
+    &__picture {
+        min-height: 1024px;
+    }
+
     &__title {
         margin-top: 20px;
     }
