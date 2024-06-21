@@ -8,6 +8,14 @@
     font-family: 'Open Sans';
     src: url('../fonts/Open_Sans/static/OpenSans-Regular.woff2') format('woff2');
     font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSans-fallback";
+    size-adjust: 105%;
+    ascent-override: 102%;
+    src: local("Arial");
 }
 
 /* Import dependencies */
